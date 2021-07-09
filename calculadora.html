@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="funcoes.js"></script>
+    <script src="https://kit.fontawesome.com/8e464229be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="fundo">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="calculadora">
+                        <h1>Calculadora</h1>
+                        <p id="resultado"></p>
+                        <table>
+                            <tr>
+                                <td><button class="botao" onclick="clean()">c</button></td>
+                                <td><button class="botao" onclick="back()"><</button></td>
+                                <td><button class="botao" onclick="insert('/')">/</button></td>
+                                <td><button class="botao" onclick="insert('*')">x</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('7')">7</button></td>
+                                <td><button class="botao" onclick="insert('8')">8</button></td>
+                                <td><button class="botao" onclick="insert('9')">9</button></td>
+                                <td><button class="botao" onclick="insert('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('4')">4</button></td>
+                                <td><button class="botao" onclick="insert('5')">5</button></td>
+                                <td><button class="botao" onclick="insert('6')">6</button></td>
+                                <td><button class="botao" onclick="insert('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="botao" onclick="insert('1')">1</button></td>
+                                <td><button class="botao" onclick="insert('2')">2</button></td>
+                                <td><button class="botao" onclick="insert('3')">3</button></td>
+                                <td rowspan="2">
+                                    <button class="botao" style="height: 106px;" onclick="calcular()">=</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="botao" style="width: 106px;" onclick="insert('0')">0</button>
+                                </td>
+                                <td><button class="botao" onclick="insert('.')">.</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                     </br></br></br></br>
+                     <img align="center" alt="GIF" src="https://octocat-generator-assets.githubusercontent.com/my-octocat-1623688364333.png" width="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer class="container-fluid text-center bg-footer">
+            <div >Redes sociais</h4></br>   
+                <div>
+                    <a href="https://github.com/Elaine-FullStackDeveloper" target="_blank"><i style="color:black" class="fab fa-github fa-2x"></i></a>
+
+                    <a href="https://br.linkedin.com/in/elaine-santos-12416a22?trk=profile-badge-cta" target="_blank"><i style="color:black" class="fab fa-linkedin fa-2x"></i></a>
+
+                    <a href="mailto:elaine.fullstackdeveloper@gmail.com" target="_blank" ><i style="color:black" class="fas fa-envelope fa-2x"></i></a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5531995096769" target="_blank"><i style="color:black" class="fab fa-whatsapp-square fa-2x"></i></a>
+
+                    <a href="./imagens/Curriculo Elaine Santos.pdf" download="Curriculo Elaine Santos" target="_blank" ><i style="color:black" class="fas fa-address-card fa-2x"></i></a>
+                </div>
+            </div> 
+        <center> <p class="footer__copy">&#169; 2021 Elaine Santos</p> </center>
+    </footer>
+</html>
